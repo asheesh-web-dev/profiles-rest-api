@@ -173,3 +173,89 @@ Commit messages should be **consistent, clear**, and follow a simple format to m
 - **Commit Messages**: Follow a clear format with types like `feat`, `fix`, `chore`, `test`, etc. Write in **imperative mood** and keep the message **concise and clear**.
 
 By following these guidelines, you’ll maintain clarity in your Git workflow, prevent confusion, and ensure consistent, well-documented code changes.
+
+
+# commit messages:
+**final concise explanation** of **commit message format** with common **scopes** included:
+
+---
+
+### **Commit Message Format**
+```
+<type>(<scope>): <short description>
+```
+- **`<type>`**: Specifies the type of change (e.g., `feat`, `fix`, `chore`).
+- **`<scope>`** (optional): Specifies the **module, feature, or component** affected by the change.
+- **`<short description>`**: A brief summary of the change.
+
+---
+
+### **Common Commit Types**
+- **`feat`**: New feature or major enhancement.
+- **`fix`**: Bug fix.
+- **`chore`**: Routine tasks (e.g., dependency updates, build tasks).
+- **`docs`**: Documentation changes.
+- **`style`**: Code style or formatting changes.
+- **`refactor`**: Code restructuring without changing functionality.
+- **`test`**: Adding or modifying tests.
+- **`perf`**: Performance improvements.
+
+---
+
+### **Common Scopes (Modules/Features)**
+Scope refers to the **specific part of the project** affected by the commit. Here are some **common scopes**:
+
+1. **`auth`**: Authentication or login system.
+2. **`api`**: Backend API or endpoints.
+3. **`ui`**: User interface components.
+4. **`payment`**: Payment gateway or payment-related functionality.
+5. **`database`**: Database schema, migrations, or queries.
+6. **`docs`**: Documentation files (e.g., README, API docs).
+7. **`ci`**: Continuous Integration (CI) configuration (e.g., GitHub Actions, Jenkins).
+8. **`deps`**: Dependencies or package updates.
+9. **`config`**: Configuration files (e.g., Webpack, Babel).
+10. **`build`**: Build system or tool configuration.
+11. **`security`**: Security-related updates or patches.
+12. **`test`**: Test files, unit tests, or testing configurations.
+13. **`footer`**: Footer section (e.g., page structure).
+14. **`content`**: Text or media content (e.g., blog posts, articles).
+
+---
+
+### **Commit Message Examples with Scope**
+1. **Feature Addition**
+   - `feat(auth): add JWT authentication`
+   - **Explanation**: Adds JWT-based authentication to the system.
+
+2. **Bug Fix**
+   - `fix(payment): resolve card validation issue`
+   - **Explanation**: Fixes a bug where the payment form doesn't validate cards correctly.
+
+3. **Code Refactor**
+   - `refactor(ui): simplify button component`
+   - **Explanation**: Refactors the button component for cleaner code.
+
+4. **Documentation Update**
+   - `docs(api): update API usage instructions`
+   - **Explanation**: Updates the documentation for new API endpoints.
+
+5. **Performance Improvement**
+   - `perf(api): optimize query response time`
+   - **Explanation**: Optimizes a database query to reduce response time.
+
+6. **Continuous Integration**
+   - `ci: add CircleCI config for automated testing`
+   - **Explanation**: Adds configuration for CircleCI to automate the test suite.
+
+7. **Dependency Update**
+   - `chore(deps): update lodash to v4.17.21`
+   - **Explanation**: Updates the `lodash` package to the latest stable version.
+
+---
+
+### **Summary**
+- **Scope** specifies the **part of the project** affected by the change (e.g., `auth`, `ui`, `api`).
+- **Commit Format**: `<type>(<scope>): <short description>`
+- **Common Scopes**: `auth`, `api`, `payment`, `ui`, `docs`, `ci`, `deps`, `config`, and more, depending on your project.
+
+Using **scopes** ensures clarity and organization, making it easy to understand which part of the project was affected by a commit.
