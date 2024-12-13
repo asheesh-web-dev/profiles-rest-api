@@ -272,5 +272,3 @@ pyrightconfig.json
 
 ### Vagrant Patch ###
 *.box
-
-# End of https://www.toptal.com/developers/gitignore/api/vagrant,python,django
